@@ -15,7 +15,15 @@
  * @version 1.0
  */
 
-get_header(); ?>
+get_header();
+
+
+if (current_user_can('administrator')){
+	global $wpdb;
+	error_log(print_r($wpdb->queries), true);
+}
+
+?>
 
 <div class="wrap">
 	<?php if ( is_home() && ! is_front_page() ) : ?>
