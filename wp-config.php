@@ -85,7 +85,7 @@ define('SAVEQUERIES', false);
 
 define ('WPLANG', 'en_GB');
 
-define('WP_CACHE', true);
+define('WP_CACHE', false);
 
 define('FS_CHMOD_DIR', 0755);
 define('FS_CHMOD_FILE', 0644);
